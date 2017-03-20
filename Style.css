@@ -1,0 +1,74 @@
+html {
+	height: 100%;
+	font-family: Verdana,sans-serif;
+
+}
+
+body {
+	width: 100%;
+	height: 300%;
+	margin: 0px;
+}
+
+.right {
+	width: 50%;
+	height: 100%;
+	background-color: #4CBDDB;
+	float: right;
+}
+
+.left {
+	width: 50%;
+	height: 100%;
+	background-color: #EE5E53;
+	float: left;
+}
+
+img {
+	float: inherit;
+	position: fixed;
+	opacity: 0;
+}
+
+.left img {
+	left: -400px;
+}
+
+.right img {
+	right: -400px;
+}
+
+#foreground {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	padding-top: 100px;
+}
+
+#foreground div {
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+#title {
+	font-size: 35px;
+	width: 400px;
+	position: static;
+}
+
+#foreground.hold {
+	position: fixed;
+	padding-top: 0px;
+}
+
+/*
+	Colors:
+		blue joycon: #4CBDDB
+		red  joycon: #EE5E53
+
