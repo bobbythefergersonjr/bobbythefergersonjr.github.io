@@ -27,7 +27,7 @@ body {
 img {
 	float: inherit;
 	position: fixed;
-	opacity: 0;
+	opacity: 1;
 }
 
 .left img {
@@ -67,6 +67,8 @@ img {
 	padding-top: 0px;
 }
 
+
+/*
 ul {
     list-style-type: none;
     margin: 0;
