@@ -1,0 +1,71 @@
+<html>
+	<head>
+  	<link rel="stylesheet" type="text/css" href="ShopCSS.css"/>
+	<script language="javascript" src="simpleCart.js"></script>
+	<script language="javascript" src="ShopScript.js"></script>
+<title>Ninvento Store</title>
+	</head>
+	<body>
+<div class="tab">
+  <button class="tablinks" onclick="open(event, 'shop')" id="defaultOpen">Shop</button>
+  <button class="tablinks" onclick="open(event, 'cart')">Cart</button>
+  <button class="tablinks" onclick="open(event, 'SignIn')">Sign In</button>
+</div>
+<div id="shop" class="tabcontent">
+  <h3>Shop</h3>
+  <p>text & pics & stuff</p>
+</div>
+
+<div id="cart" class="tabcontent">
+  <h3>Cart</h3>
+  <p>text & pics & stuff</p> 
+</div>
+
+<div id="SignIn" class="tabcontent">
+  <h3>Sign In</h3>
+  <p>text & pics & stuff</p>
+</div>
+
+<form>
+	<input class="search" type="text" name="search" placeholder="Search..">
+</form>
+
+<center>
+	<br />
+	<br />
+	<h1>Welcome <span id="customerName">To The Ninvento Store</span>!</h1>
+	<br />
+	<br />
+	<h1 class="subheading [not created yet]">Games</h1>
+	<hr>
+<div class="simpleCart_shelfItem">
+  <h2 class="item_name"> Zelda </h2>
+<p>  <input type="text" value="1" class="item_Quantity"><br>
+  <span class="item_price">$60.99</span><br>
+  <a class="item_add" href="javascript:;"> Add to Cart </a></p>
+	<hr>
+</div>
+	</body>
+</html>
+
+<!-- 
+To Do Today;
+1) CSS subheading - a subheading...
+2) CSS input - make the input quantity box better, probs add 2 buttons at side for + or -.
+3) add to cart button
+4) floats to make shelf items look better
+5) display hover information for item, maybe
+6) add pics for items and search bar
+7) put search bar on same line as tab navigation
+8) make panned tabs for avigation
+9) make somthing that says, if customername=null, run load customer name again
+10) maybe take away the onload customername and have it only if you are logged information
+11) work out how we are going to do logging in (local storage??)
+12) actually make the search bar function (idk how)
+13) make slider for top of shop page, automatic and nav bar over top section of slider, inlude forwared and back buttons.
+14) hyperlink all pictures to the item they show
+15) 
+
+Notes:
+search bar should float left when inside the nav bar, only floating right now because looks wierd for animation if not, can change.
+-->
