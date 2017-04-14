@@ -5,53 +5,51 @@ html {
 
 body {
 	width: 100%;
-	height: 300%;
+	height: 600%;
 	margin: 0px;
-	background: url(Images/back-pic1.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+
 }
 
-.intro {
-	height: 66%;
+.wrapper {
+	width: 100%;
+	position: absolute;
+	z-index: 0;
 }
 
-.right {
-	width: 50%;
-	height: 100%;
-	background-color: #4CBDDB;
-	float: right;
+#wrap1 {
+	height: 200vh;
+	background: url(Images/Background/Background.png) no-repeat fixed center;
 }
 
-.left {
-	width: 50%;
-	height: 100%;
-	background-color: #EE5E53;
-	float: left;
+#wrap2 {
+	background-color: white;
+	height: 100vh;
+	margin-top: 300vh;
+	border-style: solid;
+	border-color: #888888;
+	border-left: 3px;
+	border-right: 3px;
 }
 
-img {
-	float: inherit;
+.joycon {
 	position: fixed;
-	opacity: 1;
 	margin-top: 100px;
+	opacity: 0;
 }
 
-.left img {
+#left {
 	left: -400px;
-	margin-left: 100px;
+	margin-left: 8%;
 }
 
-.right img {
+#right {
 	right: -400px;
-	margin-right: 100px;
+	margin-right: 8%;
 }
 
 #title-pannel {
 	position: absolute;
-	z-index: 20;
+	z-index: 30;
 	width: 100%;
 	padding-top: 100px;
 }
@@ -73,7 +71,7 @@ img {
 	position: absolute;
 	z-index: 10;
 	width: 100%;
-	padding-top: 700px;
+	padding-top: 800px;
 }
 
 #screen-pannel img {
@@ -95,30 +93,32 @@ img {
 
 #screen-pannel.hold {
 	position: fixed;
-	padding-top: 0px;
+	padding-top: 100px;
 }
 
+.image {
+	position: fixed;
+	z-index: -10;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
 
-/*
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #4CBDDB; 
+#strap-pannel {
+	position: absolute;
+	z-index: 20;
+	width: 100%;
+	padding-top: 350vh;
 }
-li {
-    float: left;
+
+/*Images*/
+
+#pic-1{
+	display: block;
 }
-li a {
-    display: block;
-    color: white; 
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-li a:hover:not(.active) {
-    background-color: #EE5E53; 
+
+#pic-2 {
+	display: none;
 }
 
 /*
