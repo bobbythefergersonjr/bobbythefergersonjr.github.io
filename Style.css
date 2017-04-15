@@ -1,128 +1,143 @@
 html {
+	width: 100%;
 	height: 100%;
-	font-family: Verdana,sans-serif;
 }
 
 body {
-	width: 100%;
-	height: 600%;
 	margin: 0px;
-
+	width: 100%;
+	height: 360%;
+	background: url(Images/game-mario.jpg) no-repeat center center fixed; 
+	font-family: 'Montserrat', sans-serif;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
-.wrapper {
+#navbar {
+	list-style: none;
+	margin: 0px;
+	padding: 10px 0px;
+	text-align: center;
+	position: fixed;
+	z-index: 100;
+}
+
+#navbar li {
+	display: inline;
+	margin: 0px 30px;	
+}
+
+a.nav-item {
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.content {
+	background-color: white;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	width: 100%;
+	height: 60vh;
 	position: absolute;
+	text-align: center;
+	padding-top: 5vh;
+	/*opacity: .955555;*/
+}
+
+#pA-contentA {
+	z-index: 1;
+}
+
+#pA-contentB {
+	margin-top: 200vh;
 	z-index: 0;
 }
 
-#wrap1 {
-	height: 200vh;
-	background: url(Images/Background/Background.png) no-repeat fixed center;
+.content p {
+	margin: 0% 20%;
+	margin-top: 10%;
+	line-height: 1.5;
 }
 
-#wrap2 {
+.title {
+	font-family: Verdana,sans-serif;
+	margin: 0px;
+}
+
+hr {
+	margin: 0% 30%;
+}
+
+#header {
+	width: 100%;
+	position: absolute;
+	z-index: 10;
 	background-color: white;
-	height: 100vh;
-	margin-top: 300vh;
-	border-style: solid;
-	border-color: #888888;
-	border-left: 3px;
-	border-right: 3px;
+	padding-bottom: 10px;
+}
+
+#header.hold {
+	position: fixed;
+	top: 0px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#click {
+	width: 100%; 
+	text-align: center;
+	position: absolute;
+	z-index: -1;
 }
 
 .joycon {
 	position: fixed;
-	margin-top: 100px;
-	opacity: 0;
+	margin-top: 20vh;
+	z-index: -2;
+	display: none;
 }
 
 #left {
-	left: -400px;
-	margin-left: 8%;
+	left: 0px;
+	top: 0px;
 }
 
 #right {
-	right: -400px;
-	margin-right: 8%;
+	right: 0px;
+	top: 0px;
 }
 
-#title-pannel {
-	position: absolute;
-	z-index: 30;
-	width: 100%;
-	padding-top: 100px;
+#screen {
+	position: relative;
+	display: inline-block;
+	margin-top: 120vh;
+	z-index: -1;
 }
 
-#title-pannel div {
-	background-color: white;
-	margin-left: auto;
-	margin-right: auto;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-size: 35px;
-	width: 400px;
-	position: static;
-}
-
-#screen-pannel {
-	position: absolute;
-	z-index: 10;
-	width: 100%;
-	padding-top: 800px;
-}
-
-#screen-pannel img {
-	position: static;
-	margin-right: auto;
-	margin-left: auto;
-	display: block;
-}
-
-#screen-pannel img p {
-	color: white;
-	text-align: center;
-}
-
-#title-pannel.hold {
+#screen.hold {
 	position: fixed;
-	padding-top: 0px;
+	top: 20vh;
+	left: 0px;
+	right: 0px;
+	margin-top: 0px;
 }
 
-#screen-pannel.hold {
-	position: fixed;
-	padding-top: 100px;
-}
-
-.image {
-	position: fixed;
-	z-index: -10;
+#pA-pic-head {
+	background: url(Images/pA-header.jpg) no-repeat fixed; 
 	width: 100%;
-	height: 100vh;
-	overflow: hidden;
+	height: 40vh;
 }
 
-#strap-pannel {
-	position: absolute;
-	z-index: 20;
+#pA-pic-foot {
+	background: url(Images/pA-footer.png) no-repeat center bottom fixed; 
 	width: 100%;
-	padding-top: 350vh;
-}
-
-/*Images*/
-
-#pic-1{
-	display: block;
-}
-
-#pic-2 {
-	display: none;
+	height: 60vh;
+	margin-top: 260vh;
 }
 
 /*
 	Colors:
 		blue joycon: #4CBDDB
 		red  joycon: #EE5E53
-

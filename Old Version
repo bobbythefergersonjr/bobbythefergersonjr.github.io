@@ -1,0 +1,206 @@
+<!--Images-->
+	<!--
+	<img src="Images/Background/back-pic1.jpg" id="pic-1" class="image">
+	<img src="Images/Background/back-pic2.jpg" id="pic-2" class="image">
+
+	<!--Covers-->
+	<!--
+	<div class="wrapper" id="wrap1"></div>
+	<div class="wrapper" id="wrap2">
+		<marquee direction="right" style="width: 100vw; height: 100vh;">
+			<img src="Images/Blueprints.png">
+		</marquee>
+	</div>
+
+	<!--Joycons-->
+	<!--v
+		<img class="joycon" id="right" src="Images/joycon-red.png">
+		<img class="joycon" id="left" src="Images/joycon-blue.png">
+
+		<!--Title + subtitles-->
+		<!--
+		<div id="title-pannel" >	
+			<a href="Shop.html"><div>Ninvento Click</div></a>
+		</div>
+
+		<!--Screen-->
+		<!--
+		<div id="screen-pannel">
+			<img src="Images/Screen.png">
+		</div>
+
+		<!--Straps-->
+		<!--
+		<div id="strap-pannel">
+			<img style="margin-left: 273px;" src="Images/joycon-strap-blue.png">
+			<img style="float: right; margin-right: 273px;"src="Images/joycon-strap-red.png">
+		</div>-->
+
+
+/*
+html {
+	height: 100%;
+	font-family: Verdana,sans-serif;
+}
+
+body {
+	width: 100%;
+	height: 600%;
+	margin: 0px;
+
+}
+
+.wrapper {
+	width: 100%;
+	position: absolute;
+	z-index: 0;
+}
+
+#wrap1 {
+	height: 200vh;
+	background: url(Images/Background/Background.png) no-repeat fixed center;
+}
+
+#wrap2 {
+	background-color: white;
+	height: 100vh;
+	margin-top: 300vh;
+	border-style: solid;
+	border-color: #888888;
+	border-left: 3px;
+	border-right: 3px;
+}
+
+.joycon {
+	position: fixed;
+	margin-top: 100px;
+	opacity: 0;
+}
+
+#left {
+	left: -400px;
+	margin-left: 8%;
+}
+
+#right {
+	right: -400px;
+	margin-right: 8%;
+}
+
+#title-pannel {
+	position: absolute;
+	z-index: 30;
+	width: 100%;
+	padding-top: 100px;
+}
+
+#title-pannel div {
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 35px;
+	width: 400px;
+	position: static;
+}
+
+#screen-pannel {
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	padding-top: 800px;
+}
+
+#screen-pannel img {
+	position: static;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+
+#screen-pannel img p {
+	color: white;
+	text-align: center;
+}
+
+#title-pannel.hold {
+	position: fixed;
+	padding-top: 0px;
+}
+
+#screen-pannel.hold {
+	position: fixed;
+	padding-top: 100px;
+}
+
+.image {
+	position: fixed;
+	z-index: -10;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#strap-pannel {
+	position: absolute;
+	z-index: 20;
+	width: 100%;
+	padding-top: 350vh;
+}
+
+/*Images*/
+/*
+#pic-1{
+	display: block;
+}
+
+#pic-2 {
+	display: none;
+}*/
+
+
+ /*
+		if($(document).scrollTop() >= 100) {
+    		$('#title-pannel').addClass('hold');
+  	 	}
+    	else {
+    		$('#title-pannel').removeClass('hold');
+    	}
+
+    	if ($(document).scrollTop() >= 150) {
+	    	$('#left').animate({left: '0px', opacity: '1'});
+	    	$('#right').animate({right: '0px', opacity: '1'});
+    	} 
+
+        if ($(document).scrollTop() >= 700) {
+            $('#screen-pannel').css({"position": "fixed", "paddingTop": "100px"});
+            if ($(document).scrollTop() >= 2.5*view_height) {
+                $('#screen-pannel').css({"position": "absolute", "paddingTop": "calc(250vh + 50px)"});
+            }
+        } 
+        else {
+            $('#screen-pannel').css({"position": "absolute", "paddingTop": "800px"});
+        }
+        
+        if ($(document).scrollTop() >= 3*view_height) {
+            $('#pic-1').css("display", "none");
+            $('#pic-2').css("display", "block");
+        }
+        else {
+             $('#pic-1').css("display", "block");
+            $('#pic-2').css("display", "none");
+        }
+
+        if ($(document).scrollTop() >= 3.5*view_height) {
+            $('#strap-pannel').css({"position": "fixed", "paddingTop": "100px"});
+            /*
+            if ($(document).scrollTop() >= 2.5*view_height) {
+                $('#screen-pannel').css({"position": "absolute", "paddingTop": "calc(250vh + 100px)"});
+            }*//*
+        } 
+        else {
+            $('#strap-pannel').css({"position": "absolute", "paddingTop": "calc(350vh + 50px)"});
+        }*/
