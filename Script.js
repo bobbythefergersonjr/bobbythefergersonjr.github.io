@@ -18,7 +18,7 @@ $(document).ready(function() {
     $('#left').css("marginLeft", dist + "%");
     $('#right').css("marginRight", dist + "%");
 
-	$(window).scroll(function() {
+    $(window).scroll(function() {
         if($(document).scrollTop() >= 0.45*view_height) {
             $('#header').addClass('hold');
         }
