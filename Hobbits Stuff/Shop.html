@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
   	<link rel="stylesheet" type="text/css" href="ShopCSS.css"/>
@@ -6,66 +7,114 @@
 <title>Ninvento Store</title>
 	</head>
 	<body>
-<div class="tab">
-  <button class="tablinks" onclick="open(event, 'shop')" id="defaultOpen">Shop</button>
-  <button class="tablinks" onclick="open(event, 'cart')">Cart</button>
-  <button class="tablinks" onclick="open(event, 'SignIn')">Sign In</button>
+<!--		NavBar(From Roy, excluding cart and search bit)		-->
+<ul id="navbar">
+		<li><a href="signin.html"><img title="Sign In" src="Images\signin.png" class="signInPic"></a></li>
+		<li><a href="index.html" class="nav-item">Home</a></li>
+		<li><a href="Store.html" class="nav-item" id="active">Store</a></li>
+		<li><a href="#" class="nav-item">About</a></li>
+		<li><a href="#" class="nav-item">Contact Us</a></li>
+		<li><a href="cart.html"><img title="Go To Cart" src="Images\cart.png" class="cartPic"></a></li>
+		<li><a href="cart.html" class="cartNumber"></a></li>
+	</ul>
+<br />
+<br />
+<br />
+<br />
+<!--		Image-Slider		-->
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="Images\pA-header.jpg" style="width:100%">
 </div>
-<div id="shop" class="tabcontent">
-  <h3>Shop</h3>
-  <p>text & pics & stuff</p>
+<div class="mySlides fade">
+  <img src="Images\pA-footer.png" style="width:100%">
 </div>
-
-<div id="cart" class="tabcontent">
-  <h3>Cart</h3>
-  <p>text & pics & stuff</p> 
+<div class="mySlides fade">
+  <img src="Images\gallery.jpg" style="width:100%">
 </div>
-
-<div id="SignIn" class="tabcontent">
-  <h3>Sign In</h3>
-  <p>text & pics & stuff</p>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
-
-<form>
-	<input class="search" type="text" name="search" placeholder="Search..">
-</form>
-
-<center>
-	<br />
-	<br />
-	<h1>Welcome <span id="customerName">To The Ninvento Store</span>!</h1>
-	<br />
-	<br />
-	<h1 class="subheading [not created yet]">Games</h1>
-	<hr>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<br />
+<!--		Title		-->
+<header>
+	<h1>Ninvento<hr>Click</h1>
+</header>
+<!--		Click Product		-->
 <div class="simpleCart_shelfItem">
-  <h2 class="item_name"> Zelda </h2>
-<p>  <input type="text" value="1" class="item_Quantity"><br>
-  <span class="item_price">$60.99</span><br>
-  <a class="item_add" href="javascript:;"> Add to Cart </a></p>
-	<hr>
+<div class="adPic">
+	<a href="DetailsClick.html"><img id="imageid" src="Images\pA-header1.jpg"></a>
 </div>
+<div class="adText">
+<br>
+<br>
+<br>
+<br>
+    <h2 class="item_name"> 	The Ninvento Click </h2>
+	<!-- <div class="round-button"><div class="round-button-circle1"><button id="btn1" class="round-button"></button></div></div>
+	<div class="round-button"><div class="round-button-circle"><button id="btn2" class="round-button"></button></div></div> -->
+<p class="description"> Description: <br>
+The Ninvento Click is the newest in smart technology innovation by Ninvento. The Ninvento Click brings you the power to play anytime, anywhere! 
+With new graphics and improved battery life. The newest member to the Ninvento Family is sure to blow you away! </p>
+    <span id="price" class="item_price">$399.99</span>
+<a id="buyNowButton" class="AddToCart" href="DetailsSwitch.html"> Buy Now </a></p>
+</div>
+</div>
+<br>
+<br>
+<br>
+<!--		Acccessories		-->
+  <h1> Accessories </h1>
+  <div align="center" class="container">
+  <figure class="figure1" >
+    <img src="Images\side by side.png"/>
+    <figcaption><div><br><br>Spare Joy-Cons</div></figcaption>
+  </figure>
+  <figure class="figure1" >
+    <img src="Images\joycon-side.png" />
+    <figcaption><div><br><br>Joy-con Straps</div></figcaption>
+  </figure>
+  <figure class="figure1" >
+    <img src="Images\proPic.png" />
+    <figcaption><div><br><br>Pro-Controler</div></figcaption>
+  </figure>
+  </div>
+  <!--		somthing		-->
+
+  <!--		Games		-->
+
+  <h1> Games </h1>
+  <div align="center" class="container">
+  <figure class="figure1" >
+    <img src="Images\zeldaPic.jpg" />
+    <figcaption><div><br><br>The Legend Of Zelda</div></figcaption>
+  </figure>
+  <figure class="figure1" >
+    <img src="Images\kartPic.png" />
+    <figcaption><div><br><br>Mario Kart 8 Deluxe</div></figcaption>
+  </figure>
+  <figure class="figure1" >
+    <img src="" />
+    <figcaption><div><br><br>1, 2, Click!</div></figcaption>
+  </figure>
+</div>
+<!--		somthing		-->
+
+
+<!--		Footer(From Roy)		-->
+<img src="Images\pA-footer.png" width="100%">
 	</body>
 </html>
 
-<!-- 
-To Do Today;
-1) CSS subheading - a subheading...
-2) CSS input - make the input quantity box better, probs add 2 buttons at side for + or -.
-3) add to cart button
-4) floats to make shelf items look better
-5) display hover information for item, maybe
-6) add pics for items and search bar
-7) put search bar on same line as tab navigation
-8) make panned tabs for avigation
-9) make somthing that says, if customername=null, run load customer name again
-10) maybe take away the onload customername and have it only if you are logged information
-11) work out how we are going to do logging in (local storage??)
-12) actually make the search bar function (idk how)
-13) make slider for top of shop page, automatic and nav bar over top section of slider, inlude forwared and back buttons.
-14) hyperlink all pictures to the item they show
-15) 
+<!--
+To Do:
+1) Find decent picture for cart
+2) Get NavBar from roy so i can impliment the other stuff into it
+3) 
 
-Notes:
-search bar should float left when inside the nav bar, only floating right now because looks wierd for animation if not, can change.
 -->
