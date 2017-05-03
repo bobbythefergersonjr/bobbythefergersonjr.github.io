@@ -18,6 +18,8 @@ $(document).ready(function() {
     $('#left').css("marginLeft", dist + "%");
     $('#right').css("marginRight", dist + "%");
 
+    $('figure img').css("marginLeft", -1 * ((1920 - view_width)/2));
+
     $(window).scroll(function() {
         if($(document).scrollTop() >= 0.45*view_height) {
             $('#header').addClass('hold');
@@ -52,5 +54,36 @@ $(document).ready(function() {
             $('#right').css("display", "block");
             $('#screen').css("display", "block");
         }
+
+        if($(document).scrollTop() >= view_height + 0.05*view_height) {
+            $('#sub1').css("position", "fixed");
+            $('#sub1').css("marginTop", "calc(-40vh + 41px)");
+        }
+        else {
+            $('#sub1').css("position", "absolute");
+            $('#sub1').css("marginTop", "calc(65vh + 39px)");
+        }
+
+        if($(document).scrollTop() >= (view_height*1.2) + ((120 + 2)*3) + 39 - 45) {
+            $('#sub2').css("position", "fixed");
+            $('#sub2').css("marginTop", "calc(-40vh + 41px)");
+        }
+        else {
+            $('#sub2').css("position", "absolute");
+            $('#sub2').css("marginTop", "calc(80vh + ((120 + 2)*3px) + 39px)");
+        }
     });
 });
+var quan= 300;
+function add() {
+    quan+= 300;
+    document.getElementById('quan').innerHTML = "$" + quan;
+}
+
+function sub() {
+    quan-= 300;
+    if (quan<=300) {
+        quan=300;
+    }
+    document.getElementById('quan').innerHTML = "$" + quan;
+}
